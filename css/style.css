@@ -26,14 +26,13 @@
   left: 0;
   right: 0;
   padding: 0 5%;
-  pointer-events: none;
+  z-index: 10;
 }
 @media (min-width: 1330px) {
   .slide-caption-wrap { width: 1200px; margin: 0 auto; left: 50%; transform: translateX(-50%); }
 }
 .slide-caption {
   display: inline-block;
-  pointer-events: all;
 }
 .slide-caption h3 {
   font-family: 'BodoniLTPro-BoldCondensed', 'Playfair Display', Georgia, serif !important;
