@@ -1,3 +1,24 @@
+/* ── Cyrillic font matching original Bodoni style ── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Playfair+Display+SC:wght@700;900&display=swap&subset=cyrillic');
+
+/* Override h1 page titles to use Playfair (closest Cyrillic match to BodoniLTPro) */
+.page-header h1,
+.category-desc h2,
+.page-header h2,
+.blog h1 {
+  font-family: 'Playfair Display SC', 'BodoniLTPro-BoldCondensed', Georgia, serif !important;
+}
+
+/* Override "DID YOU KNOW" heading */
+.news div.moduletable h2 {
+  font-family: 'Playfair Display SC', 'BodoniLTPro-BoldCondensed', Georgia, serif !important;
+}
+
+/* Override slide captions */
+.slide-caption h3 {
+  font-family: 'Playfair Display SC', 'BodoniLTPro-BoldCondensed', Georgia, serif !important;
+}
+
 /* ── Override only what's needed for RU site ── */
 
 /* ── FULLSCREEN HOME SLIDER ── */
