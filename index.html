@@ -1,253 +1,346 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Подарочные идеи — Тет-де-Муан AOP</title>
-  <meta name="description" content="Порадуйте друзей, деловых партнёров, клиентов или коллег оригинальным швейцарским подарком — сыром Тет-де-Муан AOP.">
+  <title>Подарочные идеи — Тет-де-Муан AOP, Сыр де Беллэ</title>
+  <meta name="description" content="Порадуйте друзей, деловых партнёров, клиентов или коллег оригинальным швейцарским подарком.">
+
+  <!-- Original site CSS (loads fonts, colors, layout) -->
+  <link rel="stylesheet" href="https://www.tetedemoine.ch/templates/tetedemoine/css/editor.css">
+  <link rel="stylesheet" href="https://www.tetedemoine.ch/templates/tetedemoine/css/textes-2023-v05.css">
+
+  <!-- UIKit for news slider -->
+  <link rel="stylesheet" href="https://www.tetedemoine.ch/media/com_widgetkit/lib/uikit/dist/css/uikit.min.css">
+
+  <!-- Our overrides -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://www.tetedemoine.ch">
+
+  <link rel="icon" href="https://www.tetedemoine.ch/favicon.ico">
 </head>
-<body>
 
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <div class="container">
-      <a href="index.html">RU</a>
-    </div>
-  </div>
+<body class="com_content view-article no-layout no-task itemid-1287 colonnes">
 
-  <!-- HEADER -->
-  <header>
-    <div class="header-inner container">
-      <a href="index.html" class="logo">
-        <img src="https://www.tetedemoine.ch/images/logos/logo-tete-de-moine-aop.png"
-             alt="Тет-де-Муан AOP" onerror="this.style.display='none'">
+<!-- ── MENU OVERLAY ─────────────────────────────────────────────────── -->
+<div class="menu-overlay" id="menu-overlay">
+  <div class="menu-overlay-topbar">
+    <div class="menu-overlay-logo">
+      <a href="index.html">
+        <img src="https://www.tetedemoine.ch/images/logos/logo-tete-de-moine-aop.png" alt="Тет-де-Муан AOP">
       </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li>
-            <a href="#">Продукты <span class="arrow">▼</span></a>
-            <ul class="dropdown">
-              <li><a href="classic.html">Тет-де-Муан AOP Классик</a></li>
-              <li><a href="reserve.html">Тет-де-Муан AOP Резерв</a></li>
-              <li><a href="extra.html">Тет-де-Муан AOP Экстра</a></li>
-              <li><a href="pirouettebox.html">PirouetteBox</a></li>
-              <li><a href="rosomat.html">Розомат</a></li>
-              <li class="active"><a href="index.html">Подарочные идеи</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Информация <span class="arrow">▼</span></a>
-            <ul class="dropdown">
-              <li><a href="#">История</a></li>
-              <li><a href="#">Характеристики</a></li>
-              <li><a href="#">Производство</a></li>
-              <li><a href="#">Организация</a></li>
-              <li><a href="#">Молочные заводы</a></li>
-              <li><a href="#">Как использовать</a></li>
-              <li><a href="#">Полезные свойства</a></li>
-              <li><a href="#">Устойчивое развитие</a></li>
-              <li><a href="#">Продажи</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Рецепты</a></li>
-          <li><a href="#">Посещения</a></li>
-          <li><a href="#">Пресса</a></li>
-          <li><a href="#">Контакт</a></li>
-        </ul>
-      </nav>
-      <div class="burger" aria-label="Меню">
-        <span></span><span></span><span></span>
-      </div>
     </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <img src="https://www.tetedemoine.ch/images/photos-produits/grandes/idees-cadeaux-tdm.jpg"
-         alt="Подарочные идеи Тет-де-Муан">
-    <div class="hero-overlay">
-      <div class="hero-text">
-        <h1>Подарочные идеи</h1>
-        <p>Оригинальный швейцарский подарок для друзей, партнёров и коллег</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- BREADCRUMB -->
-  <div class="breadcrumb">
-    <div class="container">
-      <a href="index.html">Главная</a>
-      <span>›</span>
-      <a href="#">Продукты</a>
-      <span>›</span>
-      Подарочные идеи
-    </div>
+    <div class="menu-overlay-close" id="menu-close-btn" role="button" aria-label="Закрыть">&#x2715;</div>
   </div>
 
-  <!-- MAIN -->
-  <div class="container">
-    <div class="main-wrapper">
+  <!-- Submenu: Products -->
+  <div class="menu-overlay-sub" id="sub-products">
+    <ul>
+      <li><a href="classic.html">Тет-де-Муан AOP Классик</a></li>
+      <li><a href="reserve.html">Тет-де-Муан AOP Резерв</a></li>
+      <li><a href="extra.html">Тет-де-Муан AOP Экстра</a></li>
+      <li><a href="pirouettebox.html">PirouetteBox</a></li>
+      <li><a href="rosomat.html">Розомат</a></li>
+      <li class="current"><a href="index.html">Подарочные идеи</a></li>
+    </ul>
+  </div>
 
-      <!-- SIDEBAR -->
-      <aside class="sidebar">
-        <div class="sidebar-title">Продукты</div>
-        <ul>
-          <li><a href="classic.html">Классик</a></li>
-          <li><a href="reserve.html">Резерв</a></li>
-          <li><a href="extra.html">Экстра</a></li>
-          <li><a href="pirouettebox.html">PirouetteBox</a></li>
-          <li><a href="rosomat.html">Розомат</a></li>
-          <li class="active"><a href="index.html">Подарочные идеи</a></li>
-        </ul>
-      </aside>
+  <!-- Submenu: Info -->
+  <div class="menu-overlay-sub" id="sub-info">
+    <ul>
+      <li><a href="#">История</a></li>
+      <li><a href="#">Характеристики</a></li>
+      <li><a href="#">Производство</a></li>
+      <li><a href="#">Организация</a></li>
+      <li><a href="#">Молочные заводы</a></li>
+      <li><a href="#">Как использовать</a></li>
+      <li><a href="#">Полезные свойства</a></li>
+      <li><a href="#">Устойчивое развитие</a></li>
+      <li><a href="#">Продажи</a></li>
+    </ul>
+  </div>
 
-      <!-- CONTENT -->
-      <main class="content">
-        <h2 class="page-title">Подарочные идеи</h2>
-        <p class="page-intro">
-          Порадуйте друзей, деловых партнёров, клиентов или коллег оригинальным швейцарским подарком.
+  <!-- Submenu: Visits -->
+  <div class="menu-overlay-sub" id="sub-visits">
+    <ul>
+      <li><a href="#">Дом Тет-де-Муан в Беллэ</a></li>
+      <li><a href="#">Сыроварня Фран-Монтань</a></li>
+      <li><a href="#">Сыроварня Сэньлежье</a></li>
+      <li><a href="#">Fromages Spielhofer</a></li>
+    </ul>
+  </div>
+
+  <div class="menu-overlay-items">
+    <div class="menu-overlay-item" >
+      <a href="index.html">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-accueil.jpg" alt="">
+        <span class="img-title">Главная</span>
+      </a>
+    </div>
+    <div class="menu-overlay-item active" data-sub="sub-products">
+      <a href="#">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-produits.jpg" alt="">
+        <span class="img-title">Продукты</span>
+      </a>
+    </div>
+    <div class="menu-overlay-item" data-sub="sub-info">
+      <a href="#">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-infos.jpg" alt="">
+        <span class="img-title">Информация</span>
+      </a>
+    </div>
+    <div class="menu-overlay-item">
+      <a href="#">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-recettes.jpg" alt="">
+        <span class="img-title">Рецепты</span>
+      </a>
+    </div>
+    <div class="menu-overlay-item">
+      <a href="#">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-fete2023.jpg" alt="">
+        <span class="img-title">Праздник TdM</span>
+      </a>
+    </div>
+    <div class="menu-overlay-item" data-sub="sub-visits">
+      <a href="#">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-visite.jpg" alt="">
+        <span class="img-title">Посещения</span>
+      </a>
+    </div>
+    <div class="menu-overlay-item">
+      <a href="#">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-medias.jpg" alt="">
+        <span class="img-title">Пресса</span>
+      </a>
+    </div>
+    <div class="menu-overlay-item">
+      <a href="#">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-contact.jpg" alt="">
+        <span class="img-title">Контакт</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ── HEADER ────────────────────────────────────────────────────────── -->
+<header id="top" data-spy="affix" data-offset-top="100">
+  <div class="responsive">
+
+    <!-- Language -->
+    <div class="mod-languages">
+      <ul class="mod-languages__list lang-inline">
+        <li class="lang-active">
+          <a href="index.html" aria-current="true">RU</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Logo -->
+    <div class="moduletable logo">
+      <div class="mod-custom custom">
+        <p>
+          <a href="index.html">
+            <img src="https://www.tetedemoine.ch/images/logos/logo-tete-de-moine-aop.png"
+                 alt="Тет-де-Муан AOP" style="border:0;margin:0;">
+          </a>
         </p>
+      </div>
+    </div>
 
-        <!-- GIFT CARDS -->
-        <div class="gift-grid">
+    <!-- Menu button -->
+    <div class="moduletable menu">
+      <div class="mobilemenuck-bar">
+        <div class="mobilemenuck-bar-button" id="menu-open-btn" role="button" aria-label="Меню" style="cursor:pointer;"></div>
+      </div>
+    </div>
 
-          <!-- Card 1 -->
-          <div class="gift-card">
-            <img src="https://www.tetedemoine.ch/images/photos-produits/grandes/idees-cadeaux-tdm.jpg"
-                 alt="Подарочный набор Тет-де-Муан AOP"
-                 onerror="this.src='https://via.placeholder.com/400x200/f9f6f0/c8a85a?text=Тет-де-Муан+AOP'">
-            <div class="gift-card-body">
-              <div class="gift-card-title">Подарочный набор Тет-де-Муан AOP</div>
-              <p class="gift-card-desc">
-                Изысканный подарок с настоящим швейцарским сыром Тет-де-Муан AOP. Идеально для гурманов и ценителей сыра.
-              </p>
-              <a href="https://www.maisondelatetedemoine.ch/en/shop" target="_blank" rel="noopener" class="btn btn-gold">Купить</a>
-            </div>
-          </div>
+  </div>
+</header>
 
-          <!-- Card 2 -->
-          <div class="gift-card">
-            <img src="https://www.tetedemoine.ch/images/photos-produits/grandes/PirouetteBox.jpg"
-                 alt="Подарочный набор Пируэт®"
-                 onerror="this.src='https://via.placeholder.com/400x200/f9f6f0/c8a85a?text=Pirouette'">
-            <div class="gift-card-body">
-              <div class="gift-card-title">Подарочный набор Пируэт®</div>
-              <p class="gift-card-desc">
-                PirouetteBox — функциональная упаковка с встроенным скребком и половинкой сыра Тет-де-Муан AOP. Практичный и стильный подарок.
-              </p>
-              <a href="https://www.maisondelatetedemoine.ch/en/shop" target="_blank" rel="noopener" class="btn btn-gold">Купить</a>
-            </div>
-          </div>
+<!-- Spacer -->
+<div class="espace-affix"></div>
 
-          <!-- Card 3 -->
-          <div class="gift-card">
-            <img src="https://www.tetedemoine.ch/media/widgetkit/idees-cadeaux-a7ce21bc9a296aeeaf80d59cc685c86b.jpg"
-                 alt="Подарочный набор Жироль®"
-                 onerror="this.src='https://via.placeholder.com/400x200/f9f6f0/c8a85a?text=Girolle'">
-            <div class="gift-card-body">
-              <div class="gift-card-title">Подарочный набор Жироль®</div>
-              <p class="gift-card-desc">
-                Жироль — легендарный швейцарский инструмент для создания нежных розеток из сыра Тет-де-Муан AOP. Незабываемый подарок.
-              </p>
-              <a href="https://www.maisondelatetedemoine.ch/en/shop" target="_blank" rel="noopener" class="btn btn-gold">Купить</a>
-            </div>
-          </div>
+<!-- ── MAIN ──────────────────────────────────────────────────────────── -->
+<div class="main">
+  <div class="responsive">
 
+    <!-- LEFT: article -->
+    <div id="gauche">
+      <div class="com-content-article item-page colonnes">
+        <div class="page-header">
+          <h1>Подарочные идеи</h1>
         </div>
 
-        <!-- BUY SECTION -->
-        <div class="buy-section">
-          <h3>Купить онлайн</h3>
-          <p>Все подарочные наборы доступны в нашем официальном интернет-магазине.</p>
-          <a href="https://www.maisondelatetedemoine.ch/en/shop" target="_blank" rel="noopener" class="btn btn-gold">
-            Перейти в магазин
-          </a>
-        </div>
+        <figure class="none item-image">
+          <img src="https://www.tetedemoine.ch/images/photos-produits/grandes/idees-cadeaux-tdm.jpg"
+               alt="Подарочные идеи Тет-де-Муан">
+        </figure>
 
-      </main>
+        <div class="com-content-article__body">
+          <p>Порадуйте друзей, деловых партнёров, клиентов или коллег оригинальным швейцарским подарком.</p>
+          <ul>
+            <li>Подарочный набор Тет-де-Муан AOP</li>
+            <li>Подарочный набор Пируэт®</li>
+            <li>Подарочный набор Жироль®</li>
+          </ul>
+          <p class="bouton-lien">
+            <a href="https://www.maisondelatetedemoine.ch/en/shop" target="_blank" rel="noopener">Купить</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: sidebar -->
+    <div id="droite">
+      <section id="droite">
+        <div class="moduletable">
+          <h3>Ссылки</h3>
+          <ul class="mod-menu mod-list nav">
+            <li class="nav-item"><a href="classic.html">Тет-де-Муан AOP Классик</a></li>
+            <li class="nav-item"><a href="reserve.html">Тет-де-Муан AOP Резерв</a></li>
+            <li class="nav-item"><a href="extra.html">Тет-де-Муан AOP Экстра</a></li>
+            <li class="nav-item"><a href="pirouettebox.html">PirouetteBox</a></li>
+            <li class="nav-item"><a href="rosomat.html">Розомат</a></li>
+            <li class="nav-item current active"><a href="index.html">Подарочные идеи</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── NEWS ──────────────────────────────────────────────────────────── -->
+<section id="news" class="news">
+  <div class="responsive">
+    <div class="moduletable">
+      <h2>Знаете ли вы?</h2>
+      <div class="uk-scope">
+        <div class="box-news" uk-slider="sets: true; autoplay: true; autoplay-interval: 6500">
+          <div class="uk-position-relative uk-visible-toggle uk-margin">
+            <ul class="uk-slider-items uk-grid uk-grid-match uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-medium">
+
+              <li>
+                <div class="uk-panel uk-text-left">
+                  <div class="uk-text-center uk-margin uk-margin-remove-top">
+                    <img src="https://www.tetedemoine.ch/images/photos-news/2024/svc_spielhofer.jpg"
+                         alt="Премия SVC 2024" width="500" height="300">
+                  </div>
+                  <h3 class="uk-h3 uk-margin-remove-top">
+                    <a class="uk-link-reset" href="#">Премия SVC Западная Швейцария 2024</a>
+                  </h3>
+                  <div class="uk-margin">
+                    <p>Поздравляем Fromages Spielhofer SA и производителей молока с победой на премии SVC 2024 — это большая честь для нашего региона и Тет-де-Муан AOP.</p>
+                    <p class="bouton-lien"><a href="https://svc.swiss/de/event/prix-svc-suisse-romande-2024" target="_blank" rel="noopener">Подробнее... (Внешний сайт)</a></p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="uk-panel uk-text-left">
+                  <div class="uk-text-center uk-margin uk-margin-remove-top">
+                    <img src="https://www.tetedemoine.ch/images/photos-news/2019/campagne-2024_en.PNG"
+                         alt="Новый рекламный фильм" width="500" height="300">
+                  </div>
+                  <h3 class="uk-h3 uk-margin-remove-top">
+                    <a class="uk-link-reset" href="#">Новый рекламный фильм</a>
+                  </h3>
+                  <div class="uk-margin">
+                    <h6>«Просто уникальный!»</h6>
+                    <p>Откройте для себя ролик новой рекламной кампании Тет-де-Муан AOP (2024).</p>
+                    <p class="bouton-lien"><a href="https://youtu.be/GqsIxozZez4" target="_blank" rel="noopener">Видео (Youtube)</a></p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="uk-panel uk-text-left">
+                  <div class="uk-text-center uk-margin uk-margin-remove-top">
+                    <img src="https://www.tetedemoine.ch/media/widgetkit/idees-cadeaux-a7ce21bc9a296aeeaf80d59cc685c86b.jpg"
+                         alt="Подарочные идеи" width="500" height="300">
+                  </div>
+                  <h3 class="uk-h3 uk-margin-remove-top">
+                    <a class="uk-link-reset" href="#">Подарочные идеи</a>
+                  </h3>
+                  <div class="uk-margin">
+                    <p>Порадуйте друзей, деловых партнёров, клиентов или коллег оригинальным швейцарским подарком.</p>
+                    <p class="bouton-lien"><a href="index.html">Подробнее...</a></p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="uk-panel uk-text-left">
+                  <div class="uk-text-center uk-margin uk-margin-remove-top">
+                    <img src="https://www.tetedemoine.ch/media/widgetkit/500x300px_l-univers-de-la-tete-de-moine-8f3ebacbb9ff6023848f735654b907a2.jpg"
+                         alt="Вселенная Тет-де-Муан" width="500" height="300">
+                  </div>
+                  <h3 class="uk-h3 uk-margin-remove-top">
+                    <a class="uk-link-reset" href="#">Вселенная Тет-де-Муан</a>
+                  </h3>
+                  <div class="uk-margin">
+                    <p>Жил-был сыр, которому нет равных. Книга, изданная к 20-летию защищённого наименования происхождения (PDO), рассказывает историю Тет-де-Муан.</p>
+                    <p class="bouton-lien"><a href="https://www.maisondelatetedemoine.ch/en/shop/livre-univers-de-la-tete-de-moine-aop" target="_blank" rel="noopener">Подробнее...</a></p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="uk-panel uk-text-left">
+                  <div class="uk-text-center uk-margin uk-margin-remove-top">
+                    <img src="https://www.tetedemoine.ch/media/widgetkit/video-in-the-know-844fbeab948eca0488b2d579c7b2c469.jpg"
+                         alt="«В Курсе»" width="500" height="300">
+                  </div>
+                  <h3 class="uk-h3 uk-margin-remove-top">
+                    <a class="uk-link-reset" href="#">«В Курсе»</a>
+                  </h3>
+                  <div class="uk-margin">
+                    <p>Вы когда-нибудь ели цветы из сыра?</p>
+                    <p class="bouton-lien"><a href="https://www.facebook.com/PureWow/videos/1209106815911764" target="_blank" rel="noopener">Видео (Facebook)...</a></p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-remove-bottom"></ul>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- DID YOU KNOW -->
-  <section class="did-you-know">
-    <div class="container">
-      <div class="section-title">Знаете ли вы?</div>
-      <div class="news-grid">
-
-        <div class="news-card">
-          <img src="https://www.tetedemoine.ch/images/photos-news/2024/svc_spielhofer.jpg"
-               alt="Премия SVC 2024"
-               onerror="this.src='https://via.placeholder.com/300x140/f9f6f0/c8a85a?text=Новость'">
-          <div class="news-card-body">
-            <div class="news-card-title">Премия SVC Западная Швейцария 2024</div>
-            <p class="news-card-text">Поздравляем Fromages Spielhofer SA и их производителей молока с победой в конкурсе SVC 2024!</p>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <img src="https://www.tetedemoine.ch/images/photos-news/2019/campagne-2024_en.PNG"
-               alt="Новый рекламный фильм"
-               onerror="this.src='https://via.placeholder.com/300x140/f9f6f0/c8a85a?text=Новость'">
-          <div class="news-card-body">
-            <div class="news-card-title">Новый рекламный фильм</div>
-            <p class="news-card-text">«Просто уникальный!» — откройте для себя ролик новой рекламной кампании Тет-де-Муан AOP (2024).</p>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <img src="https://www.tetedemoine.ch/media/widgetkit/500x300px_l-univers-de-la-tete-de-moine-8f3ebacbb9ff6023848f735654b907a2.jpg"
-               alt="Вселенная Тет-де-Муан"
-               onerror="this.src='https://via.placeholder.com/300x140/f9f6f0/c8a85a?text=Книга'">
-          <div class="news-card-body">
-            <div class="news-card-title">Вселенная Тет-де-Муан</div>
-            <p class="news-card-text">Книга, посвящённая 20-летию присвоения статуса PDO. Погрузитесь в историю легендарного швейцарского сыра.</p>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <img src="https://www.tetedemoine.ch/media/widgetkit/video-in-the-know-844fbeab948eca0488b2d579c7b2c469.jpg"
-               alt="Видео — В Курсе Дела"
-               onerror="this.src='https://via.placeholder.com/300x140/f9f6f0/c8a85a?text=Видео'">
-          <div class="news-card-body">
-            <div class="news-card-title">«В Курсе Дела»</div>
-            <p class="news-card-text">Вы когда-нибудь ели цветы из сыра? Узнайте всё о традиции розеток Тет-де-Муан.</p>
-          </div>
-        </div>
-
+<!-- ── FOOTER ─────────────────────────────────────────────────────────── -->
+<section id="copyright" class="copyright">
+  <div class="responsive">
+    <div class="mod-articlesnews newsflash">
+      <div class="mod-articlesnews__item">
+        <p>© Interprofession Tête de Moine | 2025 | webdesign by
+          <a href="http://www.pub-rutz.ch" target="_blank" rel="noopener noreferrer">www.pub-rutz.ch</a>
+        </p>
+      </div>
+      <div class="mod-articlesnews__item">
+        <p>Мы в соцсетях:&nbsp;
+          <a href="https://twitter.com/TdMPromotion" target="_blank" rel="noopener">
+            <img style="margin:0" src="https://www.tetedemoine.ch/images/logos/logo-twitter.png" alt="Twitter" width="60" height="60">
+          </a>&nbsp;
+          <a href="https://www.facebook.com/tetedemoine" target="_blank" rel="noopener">
+            <img style="margin:0" src="https://www.tetedemoine.ch/images/logos/logo-facebook.png" alt="Facebook" width="60" height="60">
+          </a>&nbsp;
+          <a href="https://www.instagram.com/tete_de_moine_aop/" target="_blank" rel="noopener">
+            <img style="margin:0" src="https://www.tetedemoine.ch/images/logos/logo-instagram-tr.png" alt="Instagram" width="61" height="60">
+          </a>&nbsp;
+          <a href="https://www.youtube.com/channel/UCeBJ2R6ZnSQQO0fuEQHKhnA" target="_blank" rel="noopener">
+            <img style="margin:0" src="https://www.tetedemoine.ch/images/logos/logo-youtube.png" alt="YouTube" width="220" height="60">
+          </a>
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-copy">
-          &copy; Interprofession Tête de Moine | 2025 |
-          <a href="https://www.pub-rutz.ch" target="_blank" rel="noopener">webdesign by pub-rutz.ch</a>
-        </div>
-        <div class="social-links">
-          <a href="https://twitter.com/TeteDeMoine" target="_blank" rel="noopener" aria-label="Twitter">
-            <img src="https://www.tetedemoine.ch/images/logos/logo-twitter.png" alt="Twitter">
-          </a>
-          <a href="https://www.facebook.com/TeteDeMoineAOP" target="_blank" rel="noopener" aria-label="Facebook">
-            <img src="https://www.tetedemoine.ch/images/logos/logo-facebook.png" alt="Facebook">
-          </a>
-          <a href="https://www.instagram.com/tetedemoine.aop" target="_blank" rel="noopener" aria-label="Instagram">
-            <img src="https://www.tetedemoine.ch/images/logos/logo-instagram-tr.png" alt="Instagram">
-          </a>
-          <a href="https://www.youtube.com/user/TeteDeMoineAOP" target="_blank" rel="noopener" aria-label="YouTube">
-            <img src="https://www.tetedemoine.ch/images/logos/logo-youtube.png" alt="YouTube">
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
+<!-- UIKit JS for slider -->
+<script src="https://www.tetedemoine.ch/media/com_widgetkit/lib/uikit/dist/js/uikit.min.js"></script>
+<script src="https://www.tetedemoine.ch/media/com_widgetkit/lib/uikit/dist/js/uikit-icons.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
