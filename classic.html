@@ -15,30 +15,87 @@
 </head>
 <body class="com_content view-article no-layout no-task colonnes">
 
-<div class="menu-overlay" id="menu-overlay">
-  <div class="menu-overlay-topbar">
-    <div class="menu-overlay-logo"><a href="index.html"><img src="https://www.tetedemoine.ch/images/logos/logo-tete-de-moine-aop.png" alt="Тет-де-Муан AOP"></a></div>
-    <div class="menu-overlay-close" id="menu-close-btn" role="button">&#x2715;</div>
+<!-- ── NAV DROPDOWN ─────────────────────────────────────────────────── -->
+<div class="nav-dropdown" id="nav-dropdown">
+  <div class="nav-dd-topbar">
+    <span></span>
+    <button class="nav-dd-close" id="nav-dd-close" aria-label="Закрыть">&#x2715;</button>
   </div>
-  <div class="menu-overlay-sub open" id="sub-products">
-    <ul>
-      <li class="current"><a href="classic.html">Тет-де-Муан AOP Классик</a></li>
-      <li><a href="reserve.html">Тет-де-Муан AOP Резерв</a></li>
-      <li><a href="extra.html">Тет-де-Муан AOP Экстра</a></li>
-      <li><a href="pirouettebox.html">PirouetteBox</a></li>
-      <li><a href="rosomat.html">Розомат</a></li>
-      <li><a href="index.html">Подарочные идеи</a></li>
-    </ul>
-  </div>
-  <div class="menu-overlay-sub" id="sub-info"><ul><li><a href="#">История</a></li><li><a href="#">Характеристики</a></li><li><a href="#">Производство</a></li><li><a href="#">Организация</a></li><li><a href="#">Молочные заводы</a></li><li><a href="#">Как использовать</a></li><li><a href="#">Полезные свойства</a></li><li><a href="#">Устойчивое развитие</a></li><li><a href="#">Продажи</a></li></ul></div>
-  <div class="menu-overlay-sub" id="sub-visits"><ul><li><a href="#">Дом Тет-де-Муан в Беллэ</a></li><li><a href="#">Сыроварня Фран-Монтань</a></li><li><a href="#">Сыроварня Сэньлежье</a></li><li><a href="#">Fromages Spielhofer</a></li></ul></div>
-  <div class="menu-overlay-items">
-    <div class="menu-overlay-item"><a href="index.html"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-accueil.jpg" alt=""><span class="img-title">Главная</span></a></div>
-    <div class="menu-overlay-item active" data-sub="sub-products"><a href="#"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-produits.jpg" alt=""><span class="img-title">Продукты</span></a></div>
-    <div class="menu-overlay-item" data-sub="sub-info"><a href="#"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-infos.jpg" alt=""><span class="img-title">Информация</span></a></div>
-    <div class="menu-overlay-item"><a href="#"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-recettes.jpg" alt=""><span class="img-title">Рецепты</span></a></div>
-    <div class="menu-overlay-item" data-sub="sub-visits"><a href="#"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-visite.jpg" alt=""><span class="img-title">Посещения</span></a></div>
-    <div class="menu-overlay-item"><a href="#"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-contact.jpg" alt=""><span class="img-title">Контакт</span></a></div>
+  <div class="nav-dd-grid">
+
+    <!-- Главная -->
+    <div class="nav-dd-col">
+      <a href="index.html" class="nav-top">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-accueil.jpg" alt="">
+        <span class="nav-lbl">Главная</span>
+      </a>
+    </div>
+
+    <!-- Продукты -->
+    <div class="nav-dd-col active">
+      <a href="classic.html" class="nav-top">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-produits.jpg" alt="">
+        <span class="nav-lbl">Продукты</span>
+      </a>
+      <ul>
+            <li><a href="index.html">Подарочные идеи</a></li>
+            <li class="current"><a href="classic.html">Тет-де-Муан AOP Классик</a></li>
+            <li><a href="reserve.html">Тет-де-Муан AOP Резерв</a></li>
+            <li><a href="extra.html">Тет-де-Муан AOP Экстра</a></li>
+            <li><a href="pirouettebox.html">PirouetteBox</a></li>
+            <li><a href="rosomat.html">Розомат</a></li>
+      </ul>
+    </div>
+
+    <!-- Информация -->
+    <div class="nav-dd-col">
+      <a href="#" class="nav-top">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-infos.jpg" alt="">
+        <span class="nav-lbl">Информация</span>
+      </a>
+      <ul>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Характеристики</a></li>
+            <li><a href="#">Производство</a></li>
+            <li><a href="#">Организация</a></li>
+            <li><a href="#">Молочные заводы</a></li>
+            <li><a href="#">Как использовать</a></li>
+            <li><a href="#">Полезные свойства</a></li>
+            <li><a href="#">Устойчивое развитие</a></li>
+            <li><a href="#">Продажи</a></li>
+      </ul>
+    </div>
+
+    <!-- Рецепты -->
+    <div class="nav-dd-col">
+      <a href="https://www.tetedemoine.ch/en/recipes" target="_blank" rel="noopener" class="nav-top">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-recettes.jpg" alt="">
+        <span class="nav-lbl">Рецепты</span>
+      </a>
+    </div>
+
+    <!-- Посещения -->
+    <div class="nav-dd-col">
+      <a href="#" class="nav-top">
+        <img src="https://www.tetedemoine.ch/images/photos-menus/menu-visite.jpg" alt="">
+        <span class="nav-lbl">Посещения</span>
+      </a>
+      <ul>
+            <li><a href="#">Дом Тет-де-Муан в Беллэ</a></li>
+            <li><a href="#">Сыроварня Фран-Монтань</a></li>
+            <li><a href="#">Сыроварня Сэньлежье</a></li>
+            <li><a href="#">Fromages Spielhofer</a></li>
+      </ul>
+    </div>
+
+    <!-- Интранет & Toolbox -->
+    <div class="nav-dd-col">
+      <a href="https://www.tetedemoine.ch/en/intranet" target="_blank" rel="noopener" class="nav-top">
+        <img src="https://www.tetedemoine.ch/images/logos/logo-tete-de-moine-aop.png" alt="" style="padding:10px;background:#fff;">
+        <span class="nav-lbl">Интранет & Toolbox</span>
+      </a>
+    </div>
+
   </div>
 </div>
 
