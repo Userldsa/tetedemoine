@@ -1,5 +1,22 @@
 /* ── Override only what's needed for RU site ── */
 
+/* Force 3-column news grid on desktop (matches original) */
+@media (min-width: 960px) {
+  .box-news .uk-slider-items > li {
+    width: 33.333% !important;
+  }
+}
+@media (min-width: 640px) and (max-width: 959px) {
+  .box-news .uk-slider-items > li {
+    width: 50% !important;
+  }
+}
+@media (max-width: 639px) {
+  .box-news .uk-slider-items > li {
+    width: 100% !important;
+  }
+}
+
 /* Menu overlay custom */
 .menu-overlay {
   display: none;

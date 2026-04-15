@@ -1,77 +1,114 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Тет-де-Муан AOP Экстра</title>
+  <title>Тет-де-Муан AOP Экстра — Тет-де-Муан AOP, Сыр де Беллэ</title>
+  <link rel="stylesheet" href="https://www.tetedemoine.ch/templates/tetedemoine/css/editor.css">
+  <link rel="stylesheet" href="https://www.tetedemoine.ch/templates/tetedemoine/css/textes-2023-v05.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/css/uikit.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="https://www.tetedemoine.ch/favicon.ico">
 </head>
-<body>
-  <div class="top-bar"><div class="container"><a href="index.html">RU</a></div></div>
-  <header>
-    <div class="header-inner container">
-      <a href="index.html" class="logo"><img src="https://www.tetedemoine.ch/images/logos/logo-tete-de-moine-aop.png" alt="Тет-де-Муан AOP"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li class="active"><a href="#">Продукты <span class="arrow">▼</span></a>
-            <ul class="dropdown">
-              <li><a href="classic.html">Тет-де-Муан AOP Классик</a></li>
-              <li><a href="reserve.html">Тет-де-Муан AOP Резерв</a></li>
-              <li class="active"><a href="extra.html">Тет-де-Муан AOP Экстра</a></li>
-              <li><a href="pirouettebox.html">PirouetteBox</a></li>
-              <li><a href="rosomat.html">Розомат</a></li>
-              <li><a href="index.html">Подарочные идеи</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Информация <span class="arrow">▼</span></a><ul class="dropdown"><li><a href="#">История</a></li><li><a href="#">Характеристики</a></li><li><a href="#">Производство</a></li><li><a href="#">Организация</a></li><li><a href="#">Молочные заводы</a></li><li><a href="#">Как использовать</a></li><li><a href="#">Полезные свойства</a></li><li><a href="#">Устойчивое развитие</a></li><li><a href="#">Продажи</a></li></ul></li>
-          <li><a href="#">Рецепты</a></li>
-          <li><a href="#">Посещения</a></li>
-          <li><a href="#">Пресса</a></li>
-          <li><a href="#">Контакт</a></li>
-        </ul>
-      </nav>
-      <div class="burger"><span></span><span></span><span></span></div>
-    </div>
-  </header>
-  <section class="hero">
-    <img src="https://www.tetedemoine.ch/images/photos-produits/grandes/idees-cadeaux-tdm.jpg" alt="Тет-де-Муан AOP Экстра">
-    <div class="hero-overlay"><div class="hero-text"><h1>Тет-де-Муан AOP Экстра</h1><p>Превосходное качество и исключительный вкус</p></div></div>
-  </section>
-  <div class="breadcrumb"><div class="container"><a href="index.html">Главная</a><span>›</span><a href="#">Продукты</a><span>›</span>Экстра</div></div>
-  <div class="container">
-    <div class="main-wrapper">
-      <aside class="sidebar">
-        <div class="sidebar-title">Продукты</div>
-        <ul>
-          <li><a href="classic.html">Классик</a></li>
-          <li><a href="reserve.html">Резерв</a></li>
-          <li class="active"><a href="extra.html">Экстра</a></li>
-          <li><a href="pirouettebox.html">PirouetteBox</a></li>
-          <li><a href="rosomat.html">Розомат</a></li>
-          <li><a href="index.html">Подарочные идеи</a></li>
-        </ul>
-      </aside>
-      <main class="content">
-        <h2 class="page-title">Тет-де-Муан AOP Экстра</h2>
-        <p class="page-intro">Превосходный сыр высшего качества с выдающимися органолептическими характеристиками.</p>
-        <p>Тет-де-Муан AOP Экстра производится из молока особого качества и проходит строгий отбор. Только лучшие головки получают этот статус. Идеален для особых случаев и изысканных подарков.</p>
-        <br>
-        <a href="https://www.maisondelatetedemoine.ch/en/shop" target="_blank" rel="noopener" class="btn btn-gold">Купить</a>
-      </main>
+<body class="com_content view-article no-layout no-task colonnes">
+
+<div class="menu-overlay" id="menu-overlay">
+  <div class="menu-overlay-topbar">
+    <div class="menu-overlay-logo"><a href="index.html"><img src="https://www.tetedemoine.ch/images/logos/logo-tete-de-moine-aop.png" alt="Тет-де-Муан AOP"></a></div>
+    <div class="menu-overlay-close" id="menu-close-btn" role="button">&#x2715;</div>
+  </div>
+  <div class="menu-overlay-sub open" id="sub-products">
+    <ul>
+      <li><a href="classic.html">Тет-де-Муан AOP Классик</a></li>
+      <li><a href="reserve.html">Тет-де-Муан AOP Резерв</a></li>
+      <li class="current"><a href="extra.html">Тет-де-Муан AOP Экстра</a></li>
+      <li><a href="pirouettebox.html">PirouetteBox</a></li>
+      <li><a href="rosomat.html">Розомат</a></li>
+      <li><a href="index.html">Подарочные идеи</a></li>
+    </ul>
+  </div>
+  <div class="menu-overlay-sub" id="sub-info"><ul><li><a href="#">История</a></li><li><a href="#">Характеристики</a></li><li><a href="#">Производство</a></li><li><a href="#">Организация</a></li><li><a href="#">Молочные заводы</a></li><li><a href="#">Как использовать</a></li><li><a href="#">Полезные свойства</a></li><li><a href="#">Устойчивое развитие</a></li><li><a href="#">Продажи</a></li></ul></div>
+  <div class="menu-overlay-sub" id="sub-visits"><ul><li><a href="#">Дом Тет-де-Муан в Беллэ</a></li><li><a href="#">Сыроварня Фран-Монтань</a></li><li><a href="#">Сыроварня Сэньлежье</a></li><li><a href="#">Fromages Spielhofer</a></li></ul></div>
+  <div class="menu-overlay-items">
+    <div class="menu-overlay-item"><a href="index.html"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-accueil.jpg" alt=""><span class="img-title">Главная</span></a></div>
+    <div class="menu-overlay-item active" data-sub="sub-products"><a href="#"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-produits.jpg" alt=""><span class="img-title">Продукты</span></a></div>
+    <div class="menu-overlay-item" data-sub="sub-info"><a href="#"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-infos.jpg" alt=""><span class="img-title">Информация</span></a></div>
+    <div class="menu-overlay-item"><a href="#"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-recettes.jpg" alt=""><span class="img-title">Рецепты</span></a></div>
+    <div class="menu-overlay-item"><a href="#"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-fete2023.jpg" alt=""><span class="img-title">Праздник TdM</span></a></div>
+    <div class="menu-overlay-item" data-sub="sub-visits"><a href="#"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-visite.jpg" alt=""><span class="img-title">Посещения</span></a></div>
+    <div class="menu-overlay-item"><a href="#"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-medias.jpg" alt=""><span class="img-title">Пресса</span></a></div>
+    <div class="menu-overlay-item"><a href="#"><img src="https://www.tetedemoine.ch/images/photos-menus/menu-contact.jpg" alt=""><span class="img-title">Контакт</span></a></div>
+  </div>
+</div>
+
+<header id="top">
+  <div class="responsive">
+    <div class="mod-languages"><ul class="mod-languages__list lang-inline"><li class="lang-active"><a href="index.html">RU</a></li></ul></div>
+    <div class="moduletable logo"><div class="mod-custom custom"><p><a href="index.html"><img src="https://www.tetedemoine.ch/images/logos/logo-tete-de-moine-aop.png" alt="Тет-де-Муан AOP" style="border:0;margin:0;"></a></p></div></div>
+    <div class="moduletable menu"><div class="mobilemenuck-bar"><div class="mobilemenuck-bar-button" id="menu-open-btn" role="button" style="cursor:pointer;"></div></div></div>
+  </div>
+</header>
+<div class="espace-affix"></div>
+
+<div class="main"><div class="responsive">
+  <div id="gauche">
+    <div class="com-content-article item-page colonnes">
+      <div class="page-header"><h1>Тет-де-Муан AOP Экстра</h1></div>
+      <figure class="none item-image">
+        <img src="https://www.tetedemoine.ch/images/photos-produits/grandes/idees-cadeaux-tdm.jpg" alt="Тет-де-Муан AOP Классик">
+      </figure>
+      <div class="com-content-article__body">
+        <p>Тет-де-Муан AOP — это полутвёрдый сыр с нежной шелковистой текстурой, которая буквально тает во рту. Его подают в виде изящных розеток, срезаемых специальным инструментом — Жироль.</p>
+        <p>Классический вариант созревает не менее 75 дней в традиционных условиях кантона Берн, Швейцария. Каждый год производится около 2 400 тонн этого уникального сыра на 28 молочных заводах.</p>
+        <p class="bouton-lien"><a href="https://www.maisondelatetedemoine.ch/en/shop" target="_blank" rel="noopener">Купить</a></p>
+      </div>
     </div>
   </div>
-  <footer>
-    <div class="container"><div class="footer-inner">
-      <div class="footer-copy">&copy; Interprofession Tête de Moine | 2025</div>
-      <div class="social-links">
-        <a href="https://twitter.com/TeteDeMoine" target="_blank" rel="noopener"><img src="https://www.tetedemoine.ch/images/logos/logo-twitter.png" alt="Twitter"></a>
-        <a href="https://www.facebook.com/TeteDeMoineAOP" target="_blank" rel="noopener"><img src="https://www.tetedemoine.ch/images/logos/logo-facebook.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/tetedemoine.aop" target="_blank" rel="noopener"><img src="https://www.tetedemoine.ch/images/logos/logo-instagram-tr.png" alt="Instagram"></a>
-        <a href="https://www.youtube.com/user/TeteDeMoineAOP" target="_blank" rel="noopener"><img src="https://www.tetedemoine.ch/images/logos/logo-youtube.png" alt="YouTube"></a>
-      </div>
-    </div></div>
-  </footer>
-  <script src="js/script.js"></script>
+  <div id="droite"><section id="droite"><div class="moduletable"><h3>Ссылки</h3>
+    <ul class="mod-menu mod-list nav">
+      <li class="nav-item"><a href="classic.html">Тет-де-Муан AOP Классик</a></li>
+      <li class="nav-item"><a href="reserve.html">Тет-де-Муан AOP Резерв</a></li>
+      <li class="nav-item current active"><a href="extra.html">Тет-де-Муан AOP Экстра</a></li>
+      <li class="nav-item"><a href="pirouettebox.html">PirouetteBox</a></li>
+      <li class="nav-item"><a href="rosomat.html">Розомат</a></li>
+      <li class="nav-item"><a href="index.html">Подарочные идеи</a></li>
+    </ul>
+  </div></section></div>
+</div></div>
+
+<section id="news" class="news"><div class="responsive"><div class="moduletable">
+  <h2>Знаете ли вы?</h2>
+  <div class="uk-scope"><div class="box-news" uk-slider="sets:true;autoplay:true;autoplay-interval:6500">
+    <div class="uk-position-relative uk-visible-toggle uk-margin">
+      <ul class="uk-slider-items uk-grid uk-grid-match uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-medium">
+        <li><div class="uk-panel uk-text-left">
+          <div class="uk-text-center uk-margin uk-margin-remove-top"><img src="https://www.tetedemoine.ch/images/photos-news/2024/svc_spielhofer.jpg" alt="" width="500" height="300"></div>
+          <h3 class="uk-h3 uk-margin-remove-top"><a class="uk-link-reset" href="#">Премия SVC Западная Швейцария 2024</a></h3>
+          <div class="uk-margin"><p>Поздравляем Fromages Spielhofer SA и производителей молока с победой на премии SVC 2024.</p><p class="bouton-lien"><a href="https://svc.swiss/de/event/prix-svc-suisse-romande-2024" target="_blank" rel="noopener">Подробнее... (Внешний сайт)</a></p></div>
+        </div></li>
+        <li><div class="uk-panel uk-text-left">
+          <div class="uk-text-center uk-margin uk-margin-remove-top"><img src="https://www.tetedemoine.ch/images/photos-news/2019/campagne-2024_en.PNG" alt="" width="500" height="300"></div>
+          <h3 class="uk-h3 uk-margin-remove-top"><a class="uk-link-reset" href="#">Новый рекламный фильм</a></h3>
+          <div class="uk-margin"><h6>«Просто уникальный!»</h6><p>Откройте для себя ролик новой рекламной кампании Тет-де-Муан AOP (2024).</p><p class="bouton-lien"><a href="https://youtu.be/GqsIxozZez4" target="_blank" rel="noopener">Видео (Youtube)</a></p></div>
+        </div></li>
+        <li><div class="uk-panel uk-text-left">
+          <div class="uk-text-center uk-margin uk-margin-remove-top"><img src="https://www.tetedemoine.ch/media/widgetkit/500x300px_l-univers-de-la-tete-de-moine-8f3ebacbb9ff6023848f735654b907a2.jpg" alt="" width="500" height="300"></div>
+          <h3 class="uk-h3 uk-margin-remove-top"><a class="uk-link-reset" href="#">Вселенная Тет-де-Муан</a></h3>
+          <div class="uk-margin"><p>Книга, изданная к 20-летию защищённого наименования происхождения (PDO).</p><p class="bouton-lien"><a href="https://www.maisondelatetedemoine.ch/en/shop/livre-univers-de-la-tete-de-moine-aop" target="_blank" rel="noopener">Подробнее...</a></p></div>
+        </div></li>
+      </ul>
+    </div>
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-remove-bottom"></ul>
+  </div></div>
+</div></div></section>
+
+<section id="copyright" class="copyright"><div class="responsive"><div class="mod-articlesnews newsflash">
+  <div class="mod-articlesnews__item"><p>© Interprofession Tête de Moine | 2025 | webdesign by <a href="http://www.pub-rutz.ch" target="_blank" rel="noopener noreferrer">www.pub-rutz.ch</a></p></div>
+  <div class="mod-articlesnews__item"><p>Мы в соцсетях:&nbsp;<a href="https://twitter.com/TdMPromotion" target="_blank" rel="noopener"><img style="margin:0" src="https://www.tetedemoine.ch/images/logos/logo-twitter.png" alt="Twitter" width="60" height="60"></a>&nbsp;<a href="https://www.facebook.com/tetedemoine" target="_blank" rel="noopener"><img style="margin:0" src="https://www.tetedemoine.ch/images/logos/logo-facebook.png" alt="Facebook" width="60" height="60"></a>&nbsp;<a href="https://www.instagram.com/tete_de_moine_aop/" target="_blank" rel="noopener"><img style="margin:0" src="https://www.tetedemoine.ch/images/logos/logo-instagram-tr.png" alt="Instagram" width="61" height="60"></a>&nbsp;<a href="https://www.youtube.com/channel/UCeBJ2R6ZnSQQO0fuEQHKhnA" target="_blank" rel="noopener"><img style="margin:0" src="https://www.tetedemoine.ch/images/logos/logo-youtube.png" alt="YouTube" width="220" height="60"></a></p></div>
+</div></div></section>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit-icons.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
