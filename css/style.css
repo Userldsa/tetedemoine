@@ -1,5 +1,5 @@
-/* ── Cyrillic font matching original Bodoni style ── */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Playfair+Display+SC:wght@700;900&display=swap&subset=cyrillic');
+/* ── Fonts: Playfair SC (headings) + Fira Sans (body) — both have full Cyrillic ── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700;900&family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
 /* Override h1 page titles to use Playfair (closest Cyrillic match to BodoniLTPro) */
 .page-header h1,
@@ -17,6 +17,12 @@
 /* Override slide captions */
 .slide-caption h3 {
   font-family: 'Playfair Display SC', 'BodoniLTPro-BoldCondensed', Georgia, serif !important;
+}
+
+/* ── Unified body font (replaces FrutigerLTPro — no Cyrillic) ── */
+body,
+body *:not(h1):not(h2):not(.page-header h1):not(.news div.moduletable h2):not(.slide-caption h3) {
+  font-family: 'Fira Sans', Arial, Helvetica, sans-serif !important;
 }
 
 /* ── Override only what's needed for RU site ── */
