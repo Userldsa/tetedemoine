@@ -1,5 +1,83 @@
 /* ── Override only what's needed for RU site ── */
 
+/* ── FULLSCREEN HOME SLIDER ── */
+.home-slider {
+  display: block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.home-slider .uk-slideshow-items {
+  min-height: calc(100vh - 150px) !important;
+}
+.home-slider .uk-slideshow-items li {
+  min-height: calc(100vh - 150px);
+}
+.home-slider img[uk-cover] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slide text overlay */
+.slide-caption-wrap {
+  position: absolute;
+  bottom: 7.5%;
+  left: 0;
+  right: 0;
+  padding: 0 5%;
+  pointer-events: none;
+}
+@media (min-width: 1330px) {
+  .slide-caption-wrap { width: 1200px; margin: 0 auto; left: 50%; transform: translateX(-50%); }
+}
+.slide-caption {
+  display: inline-block;
+  pointer-events: all;
+}
+.slide-caption h3 {
+  font-family: 'BodoniLTPro-BoldCondensed', 'Playfair Display', Georgia, serif !important;
+  font-weight: normal !important;
+  font-size: 60px !important;
+  line-height: 1.1 !important;
+  text-transform: uppercase !important;
+  color: #fff !important;
+  background: rgba(0,0,0,.3);
+  margin: 0 !important;
+  padding: 20px 30px 0 30px;
+  border-radius: 20px 20px 0 0;
+  max-width: 560px;
+}
+.slide-caption-body {
+  background: rgba(0,0,0,.3);
+  padding: 0 30px 20px 30px;
+  border-radius: 0 0 20px 20px;
+  color: #fff;
+  max-width: 560px;
+}
+.slide-caption-body p {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 0;
+  padding-top: 5px;
+}
+
+/* Slideshow nav arrows */
+.home-slider .uk-slidenav {
+  background: rgba(0,0,0,.3);
+  border-radius: 12px;
+  color: #fff;
+  padding: 12px;
+}
+.home-slider .uk-slidenav:hover { background: var(--couleur-base); }
+
+/* Scroll-down arrow */
+@media (max-width: 768px) {
+  .home-slider .uk-slideshow-items { min-height: calc(100vh - 100px) !important; }
+  .home-slider .uk-slideshow-items li { min-height: calc(100vh - 100px); }
+  .slide-caption h3 { font-size: 40px !important; }
+}
+
 /* Force 3-column news grid on desktop (matches original) */
 @media (min-width: 960px) {
   .box-news .uk-slider-items > li {
